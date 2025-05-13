@@ -1,0 +1,294 @@
+body {
+    background-color: black;
+    /* display: flex;  */
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,p{
+    font-family: "Quicksand", sans-serif;
+    color: aliceblue;
+}
+
+
+header{
+    width: 80%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+   margin-left: 8vw;
+    z-index: -1;
+}
+
+
+.div_header{
+    align-items: center;
+   position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div_header input{
+    width: 60%;
+    box-shadow:rgba(113, 0, 166, 1)0px 0px 10px;
+    border: solid 2px rgba(113, 0, 166, 1);
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+    padding: 5px;
+}
+
+nav{
+    display: flex;
+    background-color: rgba(46, 9, 92, 0.85);
+<<<<<<< HEAD
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1%;
+=======
+    height: 110vh;
+    position: absolute;
+    z-index: 2;
+    flex-direction: column;
+    align-items: start;
+>>>>>>> 68aa3f2 (menu funcionando, falta a responsividade)
+    box-shadow:rgb(151, 2, 219)0px 0px 10px;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+<<<<<<< HEAD
+}
+
+nav button{
+    width: 5vh;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 15% 4vh 15% ;
+=======
+    transition: all 0.4s ease-in-out;   
+}
+
+.div_btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.menu{
+    width: 5vh;
+}
+
+.ptxt{
+ display: none;
+ font-size: 15px;
+ transition: all 1.5s ease-in-out;
+
+}
+
+
+nav button{
+    width: 6vh;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh 15% 4vh 7% ;
+>>>>>>> 68aa3f2 (menu funcionando, falta a responsividade)
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+<<<<<<< HEAD
+.menu{
+    background-image: url(img/menu.png);
+    background-size: 90% 110%;
+    margin-bottom: 10vh;
+=======
+
+
+.menu{
+    margin-bottom: 10vh;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+ 
+}
+
+.menu div{
+    width: 100%;
+    height: 0.6vh;
+    background-color: aliceblue;
+    margin: 1px ;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+>>>>>>> 68aa3f2 (menu funcionando, falta a responsividade)
+}
+
+.home{
+    background-image: url(img/home.png);
+    background-size: 100% 100%;
+}
+
+.star{
+    background-image: url(img/star.png);
+    background-size: 110% 110%;
+}
+.folder{
+    background-image: url(img/folder.png);
+    background-size: 100% 100%;
+}
+.pdf{
+    background-image: url(img/pdf.png);
+    background-size: 100% 100%;
+}
+.trash{
+    background-image: url(img/trash.png);
+    background-size: 90% 110%;
+}
+
+main{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   margin-left: 8vw;
+   margin-top: 10vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5vh;
+  }
+
+  .carousel {
+    display: flex;
+    height: 35vh;
+    overflow: hidden;
+    align-items: center;
+    width: 80%;
+    position: relative;
+  }
+
+  .card {
+    flex: 0 0 180px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin: 0 4%;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    transition: transform 1s ease-in-out;
+    border: solid 1px rgba(113, 0, 166, 1);
+    box-shadow: rgba(113, 0, 166, 1) 0px 0px 5px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;    
+  }
+    .card:hover {
+        box-shadow: rgba(113, 0, 166, 1) 0px 0px 12px;
+        transform: translateY(-20px);
+    }
+
+  .card-top {
+    flex: 4;
+    background-color: gray;
+    background-image: url(img/img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45% 115%;
+    font-weight: bold;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+
+  .card-bottom {
+    flex: 6;
+    padding: 10px;
+    display: flex;
+    border-top: solid 1px aliceblue;
+    font-size: 14px;    
+  }
+
+  .button_left, .button_right {
+    border: aliceblue solid 2px;
+    border-radius: 10px;
+    rotate: 45deg;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+  }
+
+.button_left{
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+}
+.button_right{
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+}
+
+.button_left:hover {
+    border: solid 3px aliceblue;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+}
+
+
+.button_right:hover{
+    border: solid 3px aliceblue;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+}
+<<<<<<< HEAD
+=======
+
+.div_arquivos{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 8vh;
+}
+
+
+.div_arquivos div{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    justify-content: start;
+    border-bottom: solid 1px aliceblue;
+    
+}
+
+.div_arquivos div img{
+    width: 8vh;
+    height: 8vh;
+    margin-left: 2vw;
+    
+}
+
+.div_arquivos div h3{
+    margin-left: 7vw;
+    margin-right: 10vw;
+}
+
+
+>>>>>>> 68aa3f2 (menu funcionando, falta a responsividade)
